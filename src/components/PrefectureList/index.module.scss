@@ -1,0 +1,19 @@
+.module {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 8px;
+  .checkField {
+    display: inline-block;
+    .labelArea {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      background: #eee;
+      padding: 8px;
+      border-radius: 2.5em;
+      input[type='checkbox'] {
+        margin-right: 8px;
+      }
+    }
+  }
+}
