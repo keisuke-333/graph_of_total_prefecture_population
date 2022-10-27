@@ -162,6 +162,11 @@ select {
   vertical-align: middle;
 }
 
+input[type='checkbox'] {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
