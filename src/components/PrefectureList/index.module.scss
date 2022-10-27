@@ -1,3 +1,5 @@
+@import '@variables';
+
 .module {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -13,6 +15,36 @@
       border-radius: 2.5em;
       input[type='checkbox'] {
         margin-right: 8px;
+      }
+    }
+  }
+}
+
+@include mq(lg) {
+  .module {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@include mq(md) {
+  .module {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@include mq(sm) {
+  .module {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@include mq(xs) {
+  .module {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    .checkField {
+      .labelArea {
+        padding: 4px;
       }
     }
   }
